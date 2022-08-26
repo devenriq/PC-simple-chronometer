@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4debfe2c7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/index.css" />
+
+    <title>Cronómetro</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header--nav">
+        <ul class="header--list">
+          <li>
+            <button class="button header--button" title="chronometer">
+              <i class="fa-solid fa-clock"></i>
+            </button>
+          </li>
+          <li>
+            <button class="button header--button" title="Timer">
+              <i class="fa-solid fa-hourglass"></i>
+            </button>
+          </li>
+          <li>
+            <button class="button header--button" title="Alarms">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="principal">
+        <h1 class="hero--title">Chronometer</h1>
+        <div class="hero--time">
+          <p id="time">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+          </p>
+        </div>
+        <div class="hero-buttons">
+          <button
+            class="button hero--button"
+            type="button"
+            onclick="startChronometer()"
+          >
+            Start</button
+          ><button
+            class="button hero--button"
+            type="button"
+            onclick="stopChronometer()"
+          >
+            Stop
+          </button>
+          <button
+            class="button hero--button"
+            type="button"
+            onclick="resetChronometer()"
+          >
+            Reset
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
